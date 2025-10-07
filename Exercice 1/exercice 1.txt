@@ -1,0 +1,52 @@
+• Quel est l'author du premier et dernier commit ?
+
+commande : git log -1
+
+Premier : Patrick Baumgartner
+
+commande : git log --reverse
+
+Dernier : michaelisvy <misvy@vmware.com>
+
+
+• Combien de branches existe-t-il dans ce dépôt et quelle est leur finalité ?
+
+commande : git branch -a
+
+* main
+  remotes/origin/3310
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/efficient-webjars
+  remotes/origin/gh-pages
+  remotes/origin/hacking/mysql
+  remotes/origin/main
+  remotes/origin/spring-ai
+  remotes/origin/springboot3
+  remotes/origin/wavefront
+
+Il y a 9 branches
+
+• Qui sont les trois principaux contributeurs de ce dépôt en termes de nombre de commits ?
+
+commande : git shortlog -sn
+
+ 210  Mic
+ 156  Dave Syer
+ 142  Antoine Rey
+
+
+• Combien de tags le dépôt contient-il et à quoi correspondent-ils ?
+
+commande : git tag | wc -l
+
+Il y a 1 tag
+
+commande :  git show 1.5.x
+
+Il correspond a la version du projet
+
+• Le dépôt est-il lié à un système d'intégration continue (comme Jenkins, Travis Cl, etc.)
+
+commande :  cat .github/workflows/*.yml
+
+Oui
